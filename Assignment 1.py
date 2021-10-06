@@ -16,5 +16,6 @@ while count < 10:
         print("You guessed too small")
     elif x < guess:
         print("You guessed too high")
+
 if count >= 10:
     print("The number is", x)
