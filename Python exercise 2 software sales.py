@@ -9,7 +9,7 @@ elif x >= 50 and x <= 99:
 elif x >= 100:
     discount = 40
 else:
-    print("invalid")
+    discount = 0
 
 discount_amount = ((discount) / 100) * x * 99
 total_amount = ((x * 99) - discount_amount)
