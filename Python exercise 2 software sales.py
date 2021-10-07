@@ -12,7 +12,7 @@ else:
     print("invalid")
 
 discount_amount = ((discount) / 100) * x * 99
-total_amount = ((x * 99) - (((discount) / 100) * x * 99))
+total_amount = ((x * 99) - discount_amount)
 format_discount_amount = "{:.2f}".format(discount_amount)
 format_total_amount = "{:.2f}".format(total_amount)
 
