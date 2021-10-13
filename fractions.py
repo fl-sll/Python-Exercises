@@ -13,10 +13,10 @@ while True:
     if denominator <= 0:
         denominator = int(input("Please re-enter the denominator. Value must be greater than 0: "))
     else:
-        gcd = math.gcd(numerator, denominator)
-        num1 = numerator // gcd
+        gcd = math.gcd(numerator, denominator)      #find gdc
+        num1 = numerator // gcd                     #find reduction
         den1 = denominator // gcd
-        a = num1 // den1
+        a = num1 // den1                            #reduction
         b = int(num1 % den1)
         if numerator < denominator:
             print(f"{numerator}/{denominator} is a proper fraction.")
