@@ -1,8 +1,8 @@
 def calc_new_height():
     width = float(input("Enter the current width: "))
     height = float(input("Enter the current height: "))
-    width1 = float(input("Enter the desired width: "))
     ratio = width / height
+    width1 = float(input("Enter the desired width: "))
     x = width1 / ratio
     print(f"The corresponding height is: {x}")
     return
