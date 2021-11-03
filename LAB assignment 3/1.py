@@ -7,4 +7,5 @@ dict = {
 }
 
 for key in ["Java", "Javascript", "C++", "Python",  "PHP"]:
-    print(key, "\n", dict.get(key), "\n", sep="",)
+    print(key, "\n", dict.get(key))
+    print()
