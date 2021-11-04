@@ -7,7 +7,7 @@ dict = {
 }
 
 for key in dict.keys():
-    print(f"{key} likes these cars:")
+    print(key, "likes these cars:")
     for element in list(dict.get(key)):
         print("-", element)
     print()  # to make it neater
