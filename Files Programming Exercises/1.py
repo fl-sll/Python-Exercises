@@ -1,8 +1,8 @@
 import re
 
 
-def hapax(filepath):
-    file = open(filepath, encoding="utf8")
+def hapax(file):
+    file = open(file, encoding="utf8")
     words = re.findall('\w+', file.read().lower()) #'\w+' find the first alphanumeric character 
                                                     #and then check the next character and if it is alphanumeric 
                                                     # then include it in the match 
