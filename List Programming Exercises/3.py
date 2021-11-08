@@ -3,6 +3,7 @@ import re
 def avgword(file):
     file = open(file, encoding="utf8")
     words = re.findall('\w+', file.read())
-    return sum([len(word) for word in words]) / len(words)
+    avg = sum([len(word) for word in words]) / len(words)
+    print("The average word length is", "{:.2f}".format(avg))
 
-print(avgword('Gutenberg.txt'))
+avgword('Gutenberg.txt')
