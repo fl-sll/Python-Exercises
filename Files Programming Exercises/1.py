@@ -2,7 +2,7 @@ import re
 
 def hapax(file):
     file = open(file, encoding="utf8")
-    words = re.findall('\w+', file.read().lower()) # Get all the names from the file and convert it to all lower
+    words = re.findall('\w+', file.read().lower()) # Get all the words from the file and convert it to all lower
                                                     #'\w+' find the first alphanumeric character 
                                                     #and then check the next character and if it is alphanumeric 
                                                     # then include it in the match 
