@@ -1,6 +1,5 @@
 import re
 
-
 def hapax(file):
     file = open(file, encoding="utf8")
     words = re.findall('\w+', file.read().lower()) #'\w+' find the first alphanumeric character 
