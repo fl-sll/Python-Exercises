@@ -1,7 +1,7 @@
 import re
 def splitter(file):
     file = open(file, encoding="utf8")
-    f = file.read()
+    f = file.read() #read the file
     sentences = re.sub(r'\n','', f)  #remove newlines that were already there
     sentences = re.sub(r'(?<!Mr)(?<!Mrs)(?<!Dr)\.\s([A-Z])', r'.\n\1', sentences)  #add a new line after each period only if that period is not
                                                                                     #preceded by 'Mr', 'Mrs', 'Dr' and is not followed by a space and an 
