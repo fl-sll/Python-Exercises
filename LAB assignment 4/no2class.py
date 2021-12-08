@@ -3,7 +3,7 @@ import math
 class Circle:
     def __init__(self,radius = 1.0,color = "red"):
         self.__radius = radius ** 2
-        self.__color = color
+        self.__color = str(color)
     
     def getRadius(self):
         return self.__radius
