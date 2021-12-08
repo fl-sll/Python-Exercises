@@ -37,10 +37,3 @@ class ShopListEAK:
     def getOrderEAK(self):
         self.__order = self.__price * self.__amount
         return self.__order
-
-name = "Moose Cheese"
-amount = 3
-cart = ShopListEAK(name, amount)
-cart._PriceListEAK()
-print(cart.getPriceEAK())
-print(cart.getOrderEAK())
