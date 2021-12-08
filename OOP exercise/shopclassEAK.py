@@ -2,10 +2,10 @@ class ShopListEAK:
     def __init__(self,name,amount):
         self.__name = name
         self.__amount = amount
-        self.__price = 0.0
-        self.__order = 0.0
+        self.__price = 0.0      # set default price to 0.0
+        self.__order = 0.0      # set default order to 0.0
     
-    def _PriceListEAK(self):
+    def _PriceListEAK(self):    # set values of food
         if self.__name == "Dry Cured Iberian Ham":
             self.__price = 177.80
         elif self.__name == "Wagyu Steaks":
@@ -25,15 +25,15 @@ class ShopListEAK:
         else:
             self.__price = 0.0
 
-    def getNameEAK(self):
+    def getNameEAK(self):   # gives name of food
         return self.__name
     
-    def getAmountEAK(self):
+    def getAmountEAK(self): # gives amount of food
         return self.__amount
     
-    def getPriceEAK(self):
+    def getPriceEAK(self):  # fives price of food
         return self.__price
     
-    def getOrderEAK(self):
+    def getOrderEAK(self):  # gives order(amount*price) of food
         self.__order = self.__price * self.__amount
         return self.__order
