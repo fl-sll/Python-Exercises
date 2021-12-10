@@ -12,7 +12,7 @@ class Circle:
         return self.__color
     
     def getArea(self):
-        return math.pi * (self.__radius ** 2)
+        return math.pi * (self.__radius * 2)
 
     def setRadius(self, new_radius):
         self.__radius = new_radius * 2
