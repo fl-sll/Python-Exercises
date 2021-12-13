@@ -1,27 +1,20 @@
 class Object:
-    def __init__(self):
-        pass
+    pass
 
 class X(Object):
-    def __init__(self):
-        pass
+    pass
 
 class Y(Object):
-    def __init__(self):
-        pass
+    pass
 
 class Z(Object):
-    def __init__(self):
-        pass
+    pass
 
 class A(X, Y):
-    def __init__(self):
-        pass
+    pass
 
 class B(Y, Z):
-    def __init__(self):
-        pass
+    pass
 
 class M(A, B, Z):
-    def __init__(self):
-        pass
+    pass
