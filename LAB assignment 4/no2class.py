@@ -15,7 +15,10 @@ class Circle:
         return math.pi * self.__radius
 
     def setRadius(self, new_radius):
-        self.__radius = new_radius
+        if new_radius >= 1:
+            self.__radius = new_radius
+        else:
+            self.__radius = 1
 
     def setColor(self, new_color):
         self.__color = new_color
